@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CACC43426FA0F3300B3181E /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACC43326FA0F3300B3181E /* MissionView.swift */; };
+		2CACC43626FB765400B3181E /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACC43526FB765400B3181E /* Navigation.swift */; };
+		2CACC43A26FB79EE00B3181E /* AstronautCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACC43926FB79EE00B3181E /* AstronautCoordinator.swift */; };
+		2CACC43C26FB7A3700B3181E /* MissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACC43B26FB7A3700B3181E /* MissionCoordinator.swift */; };
+		2CEFBCAC26F9E6BA00FDB2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCAB26F9E6BA00FDB2B6 /* AppDelegate.swift */; };
+		2CEFBCAE26F9E6BA00FDB2B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCAD26F9E6BA00FDB2B6 /* SceneDelegate.swift */; };
+		2CEFBCB226F9E6BC00FDB2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFBCB126F9E6BC00FDB2B6 /* Assets.xcassets */; };
+		2CEFBCB526F9E6BC00FDB2B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFBCB426F9E6BC00FDB2B6 /* Preview Assets.xcassets */; };
+		2CEFBCB826F9E6BC00FDB2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFBCB626F9E6BC00FDB2B6 /* LaunchScreen.storyboard */; };
+		2CEFBCC426F9FDA400FDB2B6 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCC326F9FDA400FDB2B6 /* RootCoordinator.swift */; };
+		2CEFBCC626F9FDAF00FDB2B6 /* RootCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCC526F9FDAF00FDB2B6 /* RootCoordinatorView.swift */; };
+		2CEFBCC826F9FEB100FDB2B6 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCC726F9FEB100FDB2B6 /* UserDefaultsService.swift */; };
+		2CEFBCCD26FA017800FDB2B6 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCCC26FA017800FDB2B6 /* HomeCoordinator.swift */; };
+		2CEFBCCF26FA018B00FDB2B6 /* HomeCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCCE26FA018B00FDB2B6 /* HomeCoordinatorView.swift */; };
+		2CEFBCD126FA01E700FDB2B6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCD026FA01E700FDB2B6 /* HomeViewModel.swift */; };
+		2CEFBCD526FA022700FDB2B6 /* MissionCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCD426FA022700FDB2B6 /* MissionCoordinatorView.swift */; };
+		2CEFBCD726FA023A00FDB2B6 /* MissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCD626FA023A00FDB2B6 /* MissionViewModel.swift */; };
+		2CEFBCDB26FA024F00FDB2B6 /* AstronautCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCDA26FA024F00FDB2B6 /* AstronautCoordinatorView.swift */; };
+		2CEFBCDD26FA025B00FDB2B6 /* AstronautViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCDC26FA025B00FDB2B6 /* AstronautViewModel.swift */; };
+		2CEFBCDF26FA042500FDB2B6 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFBCDE26FA042500FDB2B6 /* astronauts.json */; };
+		2CEFBCE126FA043A00FDB2B6 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFBCE026FA043A00FDB2B6 /* missions.json */; };
+		2CEFBCE326FA047300FDB2B6 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCE226FA047300FDB2B6 /* Astronaut.swift */; };
+		2CEFBCE526FA04AC00FDB2B6 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCE426FA04AC00FDB2B6 /* Mission.swift */; };
+		2CEFBCE826FA06A500FDB2B6 /* Bundle-decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCE726FA06A500FDB2B6 /* Bundle-decode.swift */; };
+		2CEFBCEA26FA0AD100FDB2B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEFBCE926FA0AD100FDB2B6 /* HomeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CACC43326FA0F3300B3181E /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		2CACC43526FB765400B3181E /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		2CACC43926FB79EE00B3181E /* AstronautCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautCoordinator.swift; sourceTree = "<group>"; };
+		2CACC43B26FB7A3700B3181E /* MissionCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissionCoordinator.swift; path = ../../../../../../../.Trash/MissionCoordinator.swift; sourceTree = "<group>"; };
+		2CEFBCA826F9E6BA00FDB2B6 /* Moonshot - GeRed,NavLink,Scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moonshot - GeRed,NavLink,Scroll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CEFBCAB26F9E6BA00FDB2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2CEFBCAD26F9E6BA00FDB2B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2CEFBCB126F9E6BC00FDB2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CEFBCB426F9E6BC00FDB2B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2CEFBCB726F9E6BC00FDB2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CEFBCB926F9E6BC00FDB2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEFBCC326F9FDA400FDB2B6 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		2CEFBCC526F9FDAF00FDB2B6 /* RootCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinatorView.swift; sourceTree = "<group>"; };
+		2CEFBCC726F9FEB100FDB2B6 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		2CEFBCCC26FA017800FDB2B6 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		2CEFBCCE26FA018B00FDB2B6 /* HomeCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorView.swift; sourceTree = "<group>"; };
+		2CEFBCD026FA01E700FDB2B6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2CEFBCD426FA022700FDB2B6 /* MissionCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCoordinatorView.swift; sourceTree = "<group>"; };
+		2CEFBCD626FA023A00FDB2B6 /* MissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewModel.swift; sourceTree = "<group>"; };
+		2CEFBCDA26FA024F00FDB2B6 /* AstronautCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautCoordinatorView.swift; sourceTree = "<group>"; };
+		2CEFBCDC26FA025B00FDB2B6 /* AstronautViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautViewModel.swift; sourceTree = "<group>"; };
+		2CEFBCDE26FA042500FDB2B6 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		2CEFBCE026FA043A00FDB2B6 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		2CEFBCE226FA047300FDB2B6 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		2CEFBCE426FA04AC00FDB2B6 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		2CEFBCE726FA06A500FDB2B6 /* Bundle-decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-decode.swift"; sourceTree = "<group>"; };
+		2CEFBCE926FA0AD100FDB2B6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CEFBCA526F9E6BA00FDB2B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CEFBC9F26F9E6BA00FDB2B6 = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCAA26F9E6BA00FDB2B6 /* Moonshot - GeRed,NavLink,Scroll */,
+				2CEFBCA926F9E6BA00FDB2B6 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		2CEFBCA926F9E6BA00FDB2B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCA826F9E6BA00FDB2B6 /* Moonshot - GeRed,NavLink,Scroll.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CEFBCAA26F9E6BA00FDB2B6 /* Moonshot - GeRed,NavLink,Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCAB26F9E6BA00FDB2B6 /* AppDelegate.swift */,
+				2CEFBCAD26F9E6BA00FDB2B6 /* SceneDelegate.swift */,
+				2CEFBCE626FA068200FDB2B6 /* Extensions */,
+				2CEFBCC226F9FD9100FDB2B6 /* Services */,
+				2CEFBCC126F9FD8700FDB2B6 /* UI */,
+				2CEFBCC026F9FD7800FDB2B6 /* RootCoordinator */,
+				2CEFBCBF26F9FD7100FDB2B6 /* Models */,
+				2CEFBCDE26FA042500FDB2B6 /* astronauts.json */,
+				2CEFBCE026FA043A00FDB2B6 /* missions.json */,
+				2CEFBCB126F9E6BC00FDB2B6 /* Assets.xcassets */,
+				2CEFBCB626F9E6BC00FDB2B6 /* LaunchScreen.storyboard */,
+				2CEFBCB926F9E6BC00FDB2B6 /* Info.plist */,
+				2CEFBCB326F9E6BC00FDB2B6 /* Preview Content */,
+			);
+			path = "Moonshot - GeRed,NavLink,Scroll";
+			sourceTree = "<group>";
+		};
+		2CEFBCB326F9E6BC00FDB2B6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCB426F9E6BC00FDB2B6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2CEFBCBF26F9FD7100FDB2B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCE226FA047300FDB2B6 /* Astronaut.swift */,
+				2CEFBCE426FA04AC00FDB2B6 /* Mission.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2CEFBCC026F9FD7800FDB2B6 /* RootCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCC326F9FDA400FDB2B6 /* RootCoordinator.swift */,
+				2CEFBCC526F9FDAF00FDB2B6 /* RootCoordinatorView.swift */,
+			);
+			path = RootCoordinator;
+			sourceTree = "<group>";
+		};
+		2CEFBCC126F9FD8700FDB2B6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCCB26FA015900FDB2B6 /* AstrounoutScreen */,
+				2CEFBCCA26FA013A00FDB2B6 /* MissionScreen */,
+				2CEFBCC926FA012D00FDB2B6 /* HomeScreen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2CEFBCC226F9FD9100FDB2B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCC726F9FEB100FDB2B6 /* UserDefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2CEFBCC926FA012D00FDB2B6 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCEB26FA0B3900FDB2B6 /* Logic */,
+				2CEFBCE926FA0AD100FDB2B6 /* HomeView.swift */,
+				2CEFBCCE26FA018B00FDB2B6 /* HomeCoordinatorView.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		2CEFBCCA26FA013A00FDB2B6 /* MissionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCEC26FA0B4800FDB2B6 /* Logic */,
+				2CEFBCD426FA022700FDB2B6 /* MissionCoordinatorView.swift */,
+				2CACC43326FA0F3300B3181E /* MissionView.swift */,
+			);
+			path = MissionScreen;
+			sourceTree = "<group>";
+		};
+		2CEFBCCB26FA015900FDB2B6 /* AstrounoutScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCED26FA0B5300FDB2B6 /* Logic */,
+				2CEFBCDA26FA024F00FDB2B6 /* AstronautCoordinatorView.swift */,
+			);
+			path = AstrounoutScreen;
+			sourceTree = "<group>";
+		};
+		2CEFBCE626FA068200FDB2B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCE726FA06A500FDB2B6 /* Bundle-decode.swift */,
+				2CACC43526FB765400B3181E /* Navigation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CEFBCEB26FA0B3900FDB2B6 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2CEFBCCC26FA017800FDB2B6 /* HomeCoordinator.swift */,
+				2CEFBCD026FA01E700FDB2B6 /* HomeViewModel.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		2CEFBCEC26FA0B4800FDB2B6 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2CACC43B26FB7A3700B3181E /* MissionCoordinator.swift */,
+				2CEFBCD626FA023A00FDB2B6 /* MissionViewModel.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		2CEFBCED26FA0B5300FDB2B6 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2CACC43926FB79EE00B3181E /* AstronautCoordinator.swift */,
+				2CEFBCDC26FA025B00FDB2B6 /* AstronautViewModel.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CEFBCA726F9E6BA00FDB2B6 /* Moonshot - GeRed,NavLink,Scroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CEFBCBC26F9E6BC00FDB2B6 /* Build configuration list for PBXNativeTarget "Moonshot - GeRed,NavLink,Scroll" */;
+			buildPhases = (
+				2CEFBCA426F9E6BA00FDB2B6 /* Sources */,
+				2CEFBCA526F9E6BA00FDB2B6 /* Frameworks */,
+				2CEFBCA626F9E6BA00FDB2B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moonshot - GeRed,NavLink,Scroll";
+			productName = "Moonshot - GeRed,NavLink,Scroll";
+			productReference = 2CEFBCA826F9E6BA00FDB2B6 /* Moonshot - GeRed,NavLink,Scroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CEFBCA026F9E6BA00FDB2B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					2CEFBCA726F9E6BA00FDB2B6 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 2CEFBCA326F9E6BA00FDB2B6 /* Build configuration list for PBXProject "Moonshot - GeRed,NavLink,Scroll" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CEFBC9F26F9E6BA00FDB2B6;
+			productRefGroup = 2CEFBCA926F9E6BA00FDB2B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CEFBCA726F9E6BA00FDB2B6 /* Moonshot - GeRed,NavLink,Scroll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CEFBCA626F9E6BA00FDB2B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEFBCB826F9E6BC00FDB2B6 /* LaunchScreen.storyboard in Resources */,
+				2CEFBCE126FA043A00FDB2B6 /* missions.json in Resources */,
+				2CEFBCB526F9E6BC00FDB2B6 /* Preview Assets.xcassets in Resources */,
+				2CEFBCB226F9E6BC00FDB2B6 /* Assets.xcassets in Resources */,
+				2CEFBCDF26FA042500FDB2B6 /* astronauts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CEFBCA426F9E6BA00FDB2B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CEFBCC826F9FEB100FDB2B6 /* UserDefaultsService.swift in Sources */,
+				2CEFBCD126FA01E700FDB2B6 /* HomeViewModel.swift in Sources */,
+				2CACC43A26FB79EE00B3181E /* AstronautCoordinator.swift in Sources */,
+				2CEFBCC426F9FDA400FDB2B6 /* RootCoordinator.swift in Sources */,
+				2CEFBCDB26FA024F00FDB2B6 /* AstronautCoordinatorView.swift in Sources */,
+				2CEFBCD726FA023A00FDB2B6 /* MissionViewModel.swift in Sources */,
+				2CEFBCAC26F9E6BA00FDB2B6 /* AppDelegate.swift in Sources */,
+				2CACC43626FB765400B3181E /* Navigation.swift in Sources */,
+				2CACC43C26FB7A3700B3181E /* MissionCoordinator.swift in Sources */,
+				2CEFBCE326FA047300FDB2B6 /* Astronaut.swift in Sources */,
+				2CEFBCAE26F9E6BA00FDB2B6 /* SceneDelegate.swift in Sources */,
+				2CEFBCEA26FA0AD100FDB2B6 /* HomeView.swift in Sources */,
+				2CEFBCE526FA04AC00FDB2B6 /* Mission.swift in Sources */,
+				2CEFBCE826FA06A500FDB2B6 /* Bundle-decode.swift in Sources */,
+				2CEFBCDD26FA025B00FDB2B6 /* AstronautViewModel.swift in Sources */,
+				2CEFBCCF26FA018B00FDB2B6 /* HomeCoordinatorView.swift in Sources */,
+				2CACC43426FA0F3300B3181E /* MissionView.swift in Sources */,
+				2CEFBCC626F9FDAF00FDB2B6 /* RootCoordinatorView.swift in Sources */,
+				2CEFBCCD26FA017800FDB2B6 /* HomeCoordinator.swift in Sources */,
+				2CEFBCD526FA022700FDB2B6 /* MissionCoordinatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CEFBCB626F9E6BC00FDB2B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CEFBCB726F9E6BC00FDB2B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CEFBCBA26F9E6BC00FDB2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2CEFBCBB26F9E6BC00FDB2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CEFBCBD26F9E6BC00FDB2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Moonshot - GeRed,NavLink,Scroll/Preview Content\"";
+				DEVELOPMENT_TEAM = 66QU74C344;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Moonshot - GeRed,NavLink,Scroll/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanstajcer.Moonshot---GeRed-NavLink-Scroll";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CEFBCBE26F9E6BC00FDB2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Moonshot - GeRed,NavLink,Scroll/Preview Content\"";
+				DEVELOPMENT_TEAM = 66QU74C344;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Moonshot - GeRed,NavLink,Scroll/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanstajcer.Moonshot---GeRed-NavLink-Scroll";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CEFBCA326F9E6BA00FDB2B6 /* Build configuration list for PBXProject "Moonshot - GeRed,NavLink,Scroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CEFBCBA26F9E6BC00FDB2B6 /* Debug */,
+				2CEFBCBB26F9E6BC00FDB2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CEFBCBC26F9E6BC00FDB2B6 /* Build configuration list for PBXNativeTarget "Moonshot - GeRed,NavLink,Scroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CEFBCBD26F9E6BC00FDB2B6 /* Debug */,
+				2CEFBCBE26F9E6BC00FDB2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CEFBCA026F9E6BA00FDB2B6 /* Project object */;
+}
