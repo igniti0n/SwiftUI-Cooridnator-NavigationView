@@ -2,13 +2,23 @@
 //  MissionCoordinator.swift
 //  Moonshot - GeRed,NavLink,Scroll
 //
-//  Created by Ivan Stajcer on 22.09.2021..
+//  Created by Ivan Stajcer on 04.10.2021..
 //
 
 import Foundation
 
 class MissionCoordinator: ObservableObject {
-  @Published var viewModel = HomeViewModel()
-  @Published var missionViewModel: MissionViewModel?
-  @Published var astronautViewModel: AstronautViewModel?
+  @Published var viewModel: MissionViewModel!
+  @Published var astronautCoordinator: AstronautCoordinator?
+  
+  init(mission: Mission) {
+    viewModel = MissionViewModel(mission, coordinator: self)
+  }
+}
+
+extension MissionCoordinator {
+  // MARK: - Navigation
+  func openAstronaut(astronaut: Astronaut) {
+    astronautCoordinator = AstronautCoordinator(astronaut: astronaut)
+  }
 }
